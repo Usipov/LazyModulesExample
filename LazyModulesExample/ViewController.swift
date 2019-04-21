@@ -17,9 +17,12 @@ final class ViewController: UIViewController {
     
     private func printWillLoadFeature(named featureName: String) {
         print("""
-        Will load \(featureName) if it is not loaded yet.
+        !!!
+          Will load \(featureName) if it is not loaded yet.
           See dyld logs in the console.
-          Make sure 'Dynamic Library Loads' is enabled in 'Scheme -> Run -> Diagnostics'
+          Make sure 'Dynamic Library Loads' is enabled in 'Scheme -> Run -> Diagnostics',
+          or pass 'DYLD_PRINT_LIBRRARIES' environment variable in 'Scheme -> Run -> Arguments -> Eviromnent Variables'.
+        !!!
         """)
     }
 }

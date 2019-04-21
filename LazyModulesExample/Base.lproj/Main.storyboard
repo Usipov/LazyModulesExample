@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad10_5" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,18 +15,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LazyModulesExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ve8-eT-D50">
-                                <rect key="frame" x="357.5" y="212" width="119" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ve8-eT-D50">
+                                <rect key="frame" x="128" y="212" width="119" height="30"/>
                                 <state key="normal" title="LOAD MODULE 2"/>
                                 <connections>
                                     <action selector="loadModule2" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z1Q-Fc-jRL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYh-kT-Bma">
-                                <rect key="frame" x="358.5" y="145" width="117" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYh-kT-Bma">
+                                <rect key="frame" x="129" y="145" width="117" height="30"/>
                                 <state key="normal" title="LOAD MODULE 1"/>
                                 <connections>
                                     <action selector="loadModule1" destination="BYZ-38-t0r" eventType="touchUpInside" id="xTj-Z0-5HV"/>
@@ -35,8 +35,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Ve8-eT-D50" firstAttribute="top" secondItem="TYh-kT-Bma" secondAttribute="bottom" constant="37" id="2KV-AA-wdz"/>
                             <constraint firstItem="TYh-kT-Bma" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4XO-I3-8ve"/>
                             <constraint firstItem="Ve8-eT-D50" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Adp-0I-4Au"/>
+                            <constraint firstItem="TYh-kT-Bma" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="MCd-zY-5It"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

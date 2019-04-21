@@ -1,0 +1,1 @@
+OTHER_LDFLAGS = $(inherited) -framework "MergedCore" // Force a linker to seek for symbols in "MergedCore" to avoid autolinking with "DI", "Interfaces" and "Footprints"

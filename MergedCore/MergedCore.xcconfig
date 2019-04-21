@@ -1,0 +1,5 @@
+OTHER_LDFLAGS[arch=arm64] = $(inherited) -filelist "$(OBJROOT)/LazyModulesExample.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)-$(TARGET_NAME)-arm64.objects.filelist"
+OTHER_LDFLAGS[arch=armv7] = $(inherited) -filelist "$(OBJROOT)/LazyModulesExample.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)-$(TARGET_NAME)-armv7.objects.filelist"
+OTHER_LDFLAGS[arch=armv7s] = $(inherited) -filelist "$(OBJROOT)/LazyModulesExample.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)-$(TARGET_NAME)-armv7s.objects.filelist"
+OTHER_LDFLAGS[arch=i386] = $(inherited) -filelist "$(OBJROOT)/LazyModulesExample.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)-$(TARGET_NAME)-i386.objects.filelist"
+OTHER_LDFLAGS[arch=x86_64] = $(inherited) -filelist "$(OBJROOT)/LazyModulesExample.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)-$(TARGET_NAME)-x86_64.objects.filelist"

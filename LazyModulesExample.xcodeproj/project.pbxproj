@@ -13,17 +13,10 @@
 		CCA8CDF4226D1E5B0040D1FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA8CDF3226D1E5B0040D1FE /* Assets.xcassets */; };
 		CCA8CDF7226D1E5B0040D1FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA8CDF5226D1E5B0040D1FE /* LaunchScreen.storyboard */; };
 		CCA8CE07226D1F920040D1FE /* MergedCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA8CE05226D1F920040D1FE /* MergedCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CCA8CE0A226D1F920040D1FE /* MergedCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE03226D1F920040D1FE /* MergedCore.framework */; };
 		CCA8CE0B226D1F920040D1FE /* MergedCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE03226D1F920040D1FE /* MergedCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CCA8CE19226D1F9C0040D1FE /* DI.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA8CE17226D1F9C0040D1FE /* DI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CCA8CE1C226D1F9C0040D1FE /* DI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE15226D1F9C0040D1FE /* DI.framework */; };
-		CCA8CE1D226D1F9C0040D1FE /* DI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE15226D1F9C0040D1FE /* DI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CCA8CE2A226D1FF40040D1FE /* Interfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA8CE28226D1FF40040D1FE /* Interfaces.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CCA8CE2D226D1FF40040D1FE /* Interfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE26226D1FF30040D1FE /* Interfaces.framework */; };
-		CCA8CE2E226D1FF40040D1FE /* Interfaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE26226D1FF30040D1FE /* Interfaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CCA8CE3B226D20010040D1FE /* Footprints.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA8CE39226D20010040D1FE /* Footprints.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CCA8CE3E226D20010040D1FE /* Footprints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE37226D20010040D1FE /* Footprints.framework */; };
-		CCA8CE3F226D20010040D1FE /* Footprints.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE37226D20010040D1FE /* Footprints.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CCA8CE4C226D20460040D1FE /* Feature1.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA8CE4A226D20460040D1FE /* Feature1.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CCA8CE50226D20460040D1FE /* Feature1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE48226D20460040D1FE /* Feature1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CCA8CE5D226D204D0040D1FE /* Feature2.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA8CE5B226D204D0040D1FE /* Feature2.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +34,9 @@
 		CCA8CE88226D294F0040D1FE /* Protocol2Impl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8CE87226D294F0040D1FE /* Protocol2Impl.swift */; };
 		CCA8CE8A226D29780040D1FE /* Feature1LazyDIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8CE89226D29780040D1FE /* Feature1LazyDIFactory.swift */; };
 		CCA8CE8C226D29B00040D1FE /* Feature2LazyDIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8CE8B226D29B00040D1FE /* Feature2LazyDIFactory.swift */; };
+		CCA8CE90226D2C340040D1FE /* MergedCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE03226D1F920040D1FE /* MergedCore.framework */; };
+		CCA8CE93226D2C470040D1FE /* MergedCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE03226D1F920040D1FE /* MergedCore.framework */; };
+		CCB4A485226D2FF6003C3315 /* MergedCoreDummySwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB4A484226D2FF6003C3315 /* MergedCoreDummySwiftClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +117,41 @@
 			remoteGlobalIDString = CCA8CE25226D1FF30040D1FE;
 			remoteInfo = Interfaces;
 		};
+		CCA8CE8D226D2C2E0040D1FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA8CDE1226D1E590040D1FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA8CE02226D1F920040D1FE;
+			remoteInfo = MergedCore;
+		};
+		CCA8CE91226D2C390040D1FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA8CDE1226D1E590040D1FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA8CE02226D1F920040D1FE;
+			remoteInfo = MergedCore;
+		};
+		CCB4A47E226D2F10003C3315 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA8CDE1226D1E590040D1FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA8CE14226D1F9C0040D1FE;
+			remoteInfo = DI;
+		};
+		CCB4A480226D2F10003C3315 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA8CDE1226D1E590040D1FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA8CE25226D1FF30040D1FE;
+			remoteInfo = Interfaces;
+		};
+		CCB4A482226D2F10003C3315 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA8CDE1226D1E590040D1FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA8CE36226D20010040D1FE;
+			remoteInfo = Footprints;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -130,12 +161,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CCA8CE3F226D20010040D1FE /* Footprints.framework in Embed Frameworks */,
 				CCA8CE50226D20460040D1FE /* Feature1.framework in Embed Frameworks */,
 				CCA8CE61226D204D0040D1FE /* Feature2.framework in Embed Frameworks */,
 				CCA8CE0B226D1F920040D1FE /* MergedCore.framework in Embed Frameworks */,
-				CCA8CE2E226D1FF40040D1FE /* Interfaces.framework in Embed Frameworks */,
-				CCA8CE1D226D1F9C0040D1FE /* DI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +171,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CC00439A226D34BA001802CB /* LazyModulesExample.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = LazyModulesExample.xcconfig; sourceTree = "<group>"; };
 		CCA8CDE9226D1E590040D1FE /* LazyModulesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyModulesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA8CDEC226D1E590040D1FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCA8CDEE226D1E590040D1FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +210,8 @@
 		CCA8CE87226D294F0040D1FE /* Protocol2Impl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol2Impl.swift; sourceTree = "<group>"; };
 		CCA8CE89226D29780040D1FE /* Feature1LazyDIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature1LazyDIFactory.swift; sourceTree = "<group>"; };
 		CCA8CE8B226D29B00040D1FE /* Feature2LazyDIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature2LazyDIFactory.swift; sourceTree = "<group>"; };
+		CCA8CE95226D2CB70040D1FE /* MergedCore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MergedCore.xcconfig; sourceTree = "<group>"; };
+		CCB4A484226D2FF6003C3315 /* MergedCoreDummySwiftClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergedCoreDummySwiftClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,10 +219,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCA8CE3E226D20010040D1FE /* Footprints.framework in Frameworks */,
-				CCA8CE0A226D1F920040D1FE /* MergedCore.framework in Frameworks */,
-				CCA8CE2D226D1FF40040D1FE /* Interfaces.framework in Frameworks */,
-				CCA8CE1C226D1F9C0040D1FE /* DI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +254,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA8CE90226D2C340040D1FE /* MergedCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +262,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA8CE93226D2C470040D1FE /* MergedCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +280,7 @@
 				CCA8CE49226D20460040D1FE /* Feature1 */,
 				CCA8CE5A226D204D0040D1FE /* Feature2 */,
 				CCA8CDEA226D1E590040D1FE /* Products */,
+				CCA8CE8F226D2C340040D1FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -276,6 +306,7 @@
 				CCA8CDF0226D1E590040D1FE /* Main.storyboard */,
 				CCA8CDF3226D1E5B0040D1FE /* Assets.xcassets */,
 				CCA8CDF5226D1E5B0040D1FE /* LaunchScreen.storyboard */,
+				CC00439A226D34BA001802CB /* LazyModulesExample.xcconfig */,
 				CCA8CDF8226D1E5B0040D1FE /* Info.plist */,
 			);
 			path = LazyModulesExample;
@@ -285,7 +316,9 @@
 			isa = PBXGroup;
 			children = (
 				CCA8CE05226D1F920040D1FE /* MergedCore.h */,
+				CCB4A484226D2FF6003C3315 /* MergedCoreDummySwiftClass.swift */,
 				CCA8CE06226D1F920040D1FE /* Info.plist */,
+				CCA8CE95226D2CB70040D1FE /* MergedCore.xcconfig */,
 			);
 			path = MergedCore;
 			sourceTree = "<group>";
@@ -346,6 +379,13 @@
 				CCA8CE87226D294F0040D1FE /* Protocol2Impl.swift */,
 			);
 			path = Feature2;
+			sourceTree = "<group>";
+		};
+		CCA8CE8F226D2C340040D1FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +451,7 @@
 				CCA8CDE6226D1E590040D1FE /* Frameworks */,
 				CCA8CDE7226D1E590040D1FE /* Resources */,
 				CCA8CE0F226D1F920040D1FE /* Embed Frameworks */,
+				CCB4A486226D3063003C3315 /* Check for dublicated symbols absence */,
 			);
 			buildRules = (
 			);
@@ -432,6 +473,7 @@
 			buildConfigurationList = CCA8CE0C226D1F920040D1FE /* Build configuration list for PBXNativeTarget "MergedCore" */;
 			buildPhases = (
 				CCA8CDFE226D1F920040D1FE /* Headers */,
+				CCA8CE94226D2C500040D1FE /* Create filelist per architecture */,
 				CCA8CDFF226D1F920040D1FE /* Sources */,
 				CCA8CE00226D1F920040D1FE /* Frameworks */,
 				CCA8CE01226D1F920040D1FE /* Resources */,
@@ -439,6 +481,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				CCB4A47F226D2F10003C3315 /* PBXTargetDependency */,
+				CCB4A481226D2F10003C3315 /* PBXTargetDependency */,
+				CCB4A483226D2F10003C3315 /* PBXTargetDependency */,
 			);
 			name = MergedCore;
 			productName = MergedCore;
@@ -512,6 +557,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CCA8CE8E226D2C2E0040D1FE /* PBXTargetDependency */,
 				CCA8CE7E226D28F40040D1FE /* PBXTargetDependency */,
 				CCA8CE7C226D28F10040D1FE /* PBXTargetDependency */,
 			);
@@ -532,6 +578,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CCA8CE92226D2C390040D1FE /* PBXTargetDependency */,
 				CCA8CE84226D29090040D1FE /* PBXTargetDependency */,
 				CCA8CE80226D28FA0040D1FE /* PBXTargetDependency */,
 			);
@@ -555,6 +602,7 @@
 					};
 					CCA8CE02226D1F920040D1FE = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					CCA8CE14226D1F9C0040D1FE = {
 						CreatedOnToolsVersion = 10.1;
@@ -656,6 +704,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CCA8CE94226D2C500040D1FE /* Create filelist per architecture */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Create filelist per architecture";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Will merge dependencies into MergedCore\"\n\nDEPENDENCIES=()\nDEPENDENCIES+=('DI')\nDEPENDENCIES+=('Interfaces')\nDEPENDENCIES+=('Footprints')\n\nIFS=\" \" read -r -a SPLIT <<< \"$ARCHS\"\nfor ARCH in \"${SPLIT[@]}\"; do\ncd \"${OBJROOT}/LazyModulesExample.build\"\nfilelist=\n\nfor dependency in \"${DEPENDENCIES[@]}\"; do\npath=\"${CONFIGURATION}${EFFECTIVE_PLATFORM_NAME}/${dependency}.build/Objects-normal/${ARCH}\"\n\nif [ -d \"${path}\" ]; then\n# Find all object files to be merged (i.e. mach-o files with '.o' extension).\nobject_files_wildcard=\"${path}/*.o\"\n\nfor object_file in ${object_files_wildcard}; do\nif [[ \"${object_file}\" == *\"_lto.o\" ]]; then\n# Avoid link time optimization files\ncontinue\nfi\n\n# Append file list\nfilelist+=\"${OBJROOT}/LazyModulesExample.build/${object_file}\"\nfilelist+=$'\\n'\ndone\nfi\ndone\n\n# Write filelist to the disk to be linked against (see current target's .xcconfig)\nfilelist=${filelist%$'\\n'}\nfilelistPath=\"${CONFIGURATION}${EFFECTIVE_PLATFORM_NAME}-${TARGET_NAME}-${ARCH}.objects.filelist\"\necho \"${filelist}\" > \"${filelistPath}\"\necho \"Did write filelist at path: `pwd`/${filelistPath}\"\necho \"It will be used later as a value for clang's -filelist argument\"\necho \ndone\n\n";
+			showEnvVarsInLog = 0;
+		};
+		CCB4A486226D3063003C3315 /* Check for dublicated symbols absence */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Check for dublicated symbols absence";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/find_dublicated_symbols.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CCA8CDE5226D1E590040D1FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -670,6 +759,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCB4A485226D2FF6003C3315 /* MergedCoreDummySwiftClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +867,31 @@
 			isa = PBXTargetDependency;
 			target = CCA8CE25226D1FF30040D1FE /* Interfaces */;
 			targetProxy = CCA8CE83226D29090040D1FE /* PBXContainerItemProxy */;
+		};
+		CCA8CE8E226D2C2E0040D1FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA8CE02226D1F920040D1FE /* MergedCore */;
+			targetProxy = CCA8CE8D226D2C2E0040D1FE /* PBXContainerItemProxy */;
+		};
+		CCA8CE92226D2C390040D1FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA8CE02226D1F920040D1FE /* MergedCore */;
+			targetProxy = CCA8CE91226D2C390040D1FE /* PBXContainerItemProxy */;
+		};
+		CCB4A47F226D2F10003C3315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA8CE14226D1F9C0040D1FE /* DI */;
+			targetProxy = CCB4A47E226D2F10003C3315 /* PBXContainerItemProxy */;
+		};
+		CCB4A481226D2F10003C3315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA8CE25226D1FF30040D1FE /* Interfaces */;
+			targetProxy = CCB4A480226D2F10003C3315 /* PBXContainerItemProxy */;
+		};
+		CCB4A483226D2F10003C3315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA8CE36226D20010040D1FE /* Footprints */;
+			targetProxy = CCB4A482226D2F10003C3315 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -918,6 +1033,7 @@
 		};
 		CCA8CDFC226D1E5B0040D1FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC00439A226D34BA001802CB /* LazyModulesExample.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -936,6 +1052,7 @@
 		};
 		CCA8CDFD226D1E5B0040D1FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC00439A226D34BA001802CB /* LazyModulesExample.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -954,7 +1071,10 @@
 		};
 		CCA8CE0D226D1F920040D1FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCA8CE95226D2CB70040D1FE /* MergedCore.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -972,6 +1092,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.avito.MergedCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -981,7 +1102,10 @@
 		};
 		CCA8CE0E226D1F920040D1FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCA8CE95226D2CB70040D1FE /* MergedCore.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
