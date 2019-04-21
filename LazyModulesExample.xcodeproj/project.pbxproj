@@ -1,0 +1,1369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCA8CDED226D1E590040D1FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8CDEC226D1E590040D1FE /* AppDelegate.swift */; };
+		CCA8CDEF226D1E590040D1FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8CDEE226D1E590040D1FE /* ViewController.swift */; };
+		CCA8CDF2226D1E590040D1FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA8CDF0226D1E590040D1FE /* Main.storyboard */; };
+		CCA8CDF4226D1E5B0040D1FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA8CDF3226D1E5B0040D1FE /* Assets.xcassets */; };
+		CCA8CDF7226D1E5B0040D1FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA8CDF5226D1E5B0040D1FE /* LaunchScreen.storyboard */; };
+		CCA8CE07226D1F920040D1FE /* MergedCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA8CE05226D1F920040D1FE /* MergedCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCA8CE0A226D1F920040D1FE /* MergedCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE03226D1F920040D1FE /* MergedCore.framework */; };
+		CCA8CE0B226D1F920040D1FE /* MergedCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE03226D1F920040D1FE /* MergedCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCA8CE19226D1F9C0040D1FE /* DI.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA8CE17226D1F9C0040D1FE /* DI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCA8CE1C226D1F9C0040D1FE /* DI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE15226D1F9C0040D1FE /* DI.framework */; };
+		CCA8CE1D226D1F9C0040D1FE /* DI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE15226D1F9C0040D1FE /* DI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCA8CE2A226D1FF40040D1FE /* Interfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA8CE28226D1FF40040D1FE /* Interfaces.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCA8CE2D226D1FF40040D1FE /* Interfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE26226D1FF30040D1FE /* Interfaces.framework */; };
+		CCA8CE2E226D1FF40040D1FE /* Interfaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE26226D1FF30040D1FE /* Interfaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCA8CE3B226D20010040D1FE /* Footprints.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA8CE39226D20010040D1FE /* Footprints.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCA8CE3E226D20010040D1FE /* Footprints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE37226D20010040D1FE /* Footprints.framework */; };
+		CCA8CE3F226D20010040D1FE /* Footprints.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE37226D20010040D1FE /* Footprints.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCA8CE4C226D20460040D1FE /* Feature1.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA8CE4A226D20460040D1FE /* Feature1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCA8CE50226D20460040D1FE /* Feature1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE48226D20460040D1FE /* Feature1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCA8CE5D226D204D0040D1FE /* Feature2.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA8CE5B226D204D0040D1FE /* Feature2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCA8CE61226D204D0040D1FE /* Feature2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8CE59226D204D0040D1FE /* Feature2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCA8CE66226D205B0040D1FE /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8CE65226D205B0040D1FE /* DIContainer.swift */; };
+		CCA8CE68226D21910040D1FE /* LazyDIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8CE67226D21910040D1FE /* LazyDIFactory.swift */; };
+		CCA8CE6A226D22620040D1FE /* LazyDIFactoryInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8CE69226D22620040D1FE /* LazyDIFactoryInfoProvider.swift */; };
+		CCA8CE6F226D23F60040D1FE /* LazyModulesLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA8CE6D226D23F60040D1FE /* LazyModulesLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCA8CE70226D23F60040D1FE /* LazyModulesLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA8CE6E226D23F60040D1FE /* LazyModulesLoader.m */; };
+		CCA8CE74226D26340040D1FE /* LazyFeaturesFootprintsRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8CE73226D26340040D1FE /* LazyFeaturesFootprintsRegistry.swift */; };
+		CCA8CE76226D26500040D1FE /* LazyFeatureFootprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8CE75226D26500040D1FE /* LazyFeatureFootprint.swift */; };
+		CCA8CE78226D28CB0040D1FE /* Protocol1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8CE77226D28CB0040D1FE /* Protocol1.swift */; };
+		CCA8CE7A226D28DE0040D1FE /* Protocol2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8CE79226D28DE0040D1FE /* Protocol2.swift */; };
+		CCA8CE86226D29170040D1FE /* Protocol1Impl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8CE85226D29170040D1FE /* Protocol1Impl.swift */; };
+		CCA8CE88226D294F0040D1FE /* Protocol2Impl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8CE87226D294F0040D1FE /* Protocol2Impl.swift */; };
+		CCA8CE8A226D29780040D1FE /* Feature1LazyDIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8CE89226D29780040D1FE /* Feature1LazyDIFactory.swift */; };
+		CCA8CE8C226D29B00040D1FE /* Feature2LazyDIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8CE8B226D29B00040D1FE /* Feature2LazyDIFactory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCA8CE08226D1F920040D1FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA8CDE1226D1E590040D1FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA8CE02226D1F920040D1FE;
+			remoteInfo = MergedCore;
+		};
+		CCA8CE1A226D1F9C0040D1FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA8CDE1226D1E590040D1FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA8CE14226D1F9C0040D1FE;
+			remoteInfo = DI;
+		};
+		CCA8CE2B226D1FF40040D1FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA8CDE1226D1E590040D1FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA8CE25226D1FF30040D1FE;
+			remoteInfo = Interfaces;
+		};
+		CCA8CE3C226D20010040D1FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA8CDE1226D1E590040D1FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA8CE36226D20010040D1FE;
+			remoteInfo = Footprints;
+		};
+		CCA8CE4D226D20460040D1FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA8CDE1226D1E590040D1FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA8CE47226D20460040D1FE;
+			remoteInfo = Feature1;
+		};
+		CCA8CE5E226D204D0040D1FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA8CDE1226D1E590040D1FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA8CE58226D204D0040D1FE;
+			remoteInfo = Feature2;
+		};
+		CCA8CE71226D261C0040D1FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA8CDE1226D1E590040D1FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA8CE14226D1F9C0040D1FE;
+			remoteInfo = DI;
+		};
+		CCA8CE7B226D28F10040D1FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA8CDE1226D1E590040D1FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA8CE14226D1F9C0040D1FE;
+			remoteInfo = DI;
+		};
+		CCA8CE7D226D28F40040D1FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA8CDE1226D1E590040D1FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA8CE25226D1FF30040D1FE;
+			remoteInfo = Interfaces;
+		};
+		CCA8CE7F226D28FA0040D1FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA8CDE1226D1E590040D1FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA8CE14226D1F9C0040D1FE;
+			remoteInfo = DI;
+		};
+		CCA8CE83226D29090040D1FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA8CDE1226D1E590040D1FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA8CE25226D1FF30040D1FE;
+			remoteInfo = Interfaces;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CCA8CE0F226D1F920040D1FE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CCA8CE3F226D20010040D1FE /* Footprints.framework in Embed Frameworks */,
+				CCA8CE50226D20460040D1FE /* Feature1.framework in Embed Frameworks */,
+				CCA8CE61226D204D0040D1FE /* Feature2.framework in Embed Frameworks */,
+				CCA8CE0B226D1F920040D1FE /* MergedCore.framework in Embed Frameworks */,
+				CCA8CE2E226D1FF40040D1FE /* Interfaces.framework in Embed Frameworks */,
+				CCA8CE1D226D1F9C0040D1FE /* DI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CCA8CDE9226D1E590040D1FE /* LazyModulesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyModulesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA8CDEC226D1E590040D1FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCA8CDEE226D1E590040D1FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCA8CDF1226D1E590040D1FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCA8CDF3226D1E5B0040D1FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCA8CDF6226D1E5B0040D1FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCA8CDF8226D1E5B0040D1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA8CE03226D1F920040D1FE /* MergedCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MergedCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA8CE05226D1F920040D1FE /* MergedCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MergedCore.h; sourceTree = "<group>"; };
+		CCA8CE06226D1F920040D1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA8CE15226D1F9C0040D1FE /* DI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA8CE17226D1F9C0040D1FE /* DI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DI.h; sourceTree = "<group>"; };
+		CCA8CE18226D1F9C0040D1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA8CE26226D1FF30040D1FE /* Interfaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Interfaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA8CE28226D1FF40040D1FE /* Interfaces.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Interfaces.h; sourceTree = "<group>"; };
+		CCA8CE29226D1FF40040D1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA8CE37226D20010040D1FE /* Footprints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Footprints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA8CE39226D20010040D1FE /* Footprints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Footprints.h; sourceTree = "<group>"; };
+		CCA8CE3A226D20010040D1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA8CE48226D20460040D1FE /* Feature1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Feature1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA8CE4A226D20460040D1FE /* Feature1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feature1.h; sourceTree = "<group>"; };
+		CCA8CE4B226D20460040D1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA8CE59226D204D0040D1FE /* Feature2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Feature2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA8CE5B226D204D0040D1FE /* Feature2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feature2.h; sourceTree = "<group>"; };
+		CCA8CE5C226D204D0040D1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA8CE65226D205B0040D1FE /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		CCA8CE67226D21910040D1FE /* LazyDIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyDIFactory.swift; sourceTree = "<group>"; };
+		CCA8CE69226D22620040D1FE /* LazyDIFactoryInfoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyDIFactoryInfoProvider.swift; sourceTree = "<group>"; };
+		CCA8CE6D226D23F60040D1FE /* LazyModulesLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LazyModulesLoader.h; sourceTree = "<group>"; };
+		CCA8CE6E226D23F60040D1FE /* LazyModulesLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LazyModulesLoader.m; sourceTree = "<group>"; };
+		CCA8CE73226D26340040D1FE /* LazyFeaturesFootprintsRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyFeaturesFootprintsRegistry.swift; sourceTree = "<group>"; };
+		CCA8CE75226D26500040D1FE /* LazyFeatureFootprint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyFeatureFootprint.swift; sourceTree = "<group>"; };
+		CCA8CE77226D28CB0040D1FE /* Protocol1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol1.swift; sourceTree = "<group>"; };
+		CCA8CE79226D28DE0040D1FE /* Protocol2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol2.swift; sourceTree = "<group>"; };
+		CCA8CE85226D29170040D1FE /* Protocol1Impl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol1Impl.swift; sourceTree = "<group>"; };
+		CCA8CE87226D294F0040D1FE /* Protocol2Impl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol2Impl.swift; sourceTree = "<group>"; };
+		CCA8CE89226D29780040D1FE /* Feature1LazyDIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature1LazyDIFactory.swift; sourceTree = "<group>"; };
+		CCA8CE8B226D29B00040D1FE /* Feature2LazyDIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature2LazyDIFactory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCA8CDE6226D1E590040D1FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA8CE3E226D20010040D1FE /* Footprints.framework in Frameworks */,
+				CCA8CE0A226D1F920040D1FE /* MergedCore.framework in Frameworks */,
+				CCA8CE2D226D1FF40040D1FE /* Interfaces.framework in Frameworks */,
+				CCA8CE1C226D1F9C0040D1FE /* DI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE00226D1F920040D1FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE12226D1F9C0040D1FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE23226D1FF30040D1FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE34226D20010040D1FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE45226D20460040D1FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE56226D204D0040D1FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCA8CDE0226D1E590040D1FE = {
+			isa = PBXGroup;
+			children = (
+				CCA8CDEB226D1E590040D1FE /* LazyModulesExample */,
+				CCA8CE04226D1F920040D1FE /* MergedCore */,
+				CCA8CE16226D1F9C0040D1FE /* DI */,
+				CCA8CE27226D1FF40040D1FE /* Interfaces */,
+				CCA8CE38226D20010040D1FE /* Footprints */,
+				CCA8CE49226D20460040D1FE /* Feature1 */,
+				CCA8CE5A226D204D0040D1FE /* Feature2 */,
+				CCA8CDEA226D1E590040D1FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCA8CDEA226D1E590040D1FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCA8CDE9226D1E590040D1FE /* LazyModulesExample.app */,
+				CCA8CE03226D1F920040D1FE /* MergedCore.framework */,
+				CCA8CE15226D1F9C0040D1FE /* DI.framework */,
+				CCA8CE26226D1FF30040D1FE /* Interfaces.framework */,
+				CCA8CE37226D20010040D1FE /* Footprints.framework */,
+				CCA8CE48226D20460040D1FE /* Feature1.framework */,
+				CCA8CE59226D204D0040D1FE /* Feature2.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCA8CDEB226D1E590040D1FE /* LazyModulesExample */ = {
+			isa = PBXGroup;
+			children = (
+				CCA8CDEC226D1E590040D1FE /* AppDelegate.swift */,
+				CCA8CDEE226D1E590040D1FE /* ViewController.swift */,
+				CCA8CDF0226D1E590040D1FE /* Main.storyboard */,
+				CCA8CDF3226D1E5B0040D1FE /* Assets.xcassets */,
+				CCA8CDF5226D1E5B0040D1FE /* LaunchScreen.storyboard */,
+				CCA8CDF8226D1E5B0040D1FE /* Info.plist */,
+			);
+			path = LazyModulesExample;
+			sourceTree = "<group>";
+		};
+		CCA8CE04226D1F920040D1FE /* MergedCore */ = {
+			isa = PBXGroup;
+			children = (
+				CCA8CE05226D1F920040D1FE /* MergedCore.h */,
+				CCA8CE06226D1F920040D1FE /* Info.plist */,
+			);
+			path = MergedCore;
+			sourceTree = "<group>";
+		};
+		CCA8CE16226D1F9C0040D1FE /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				CCA8CE17226D1F9C0040D1FE /* DI.h */,
+				CCA8CE65226D205B0040D1FE /* DIContainer.swift */,
+				CCA8CE67226D21910040D1FE /* LazyDIFactory.swift */,
+				CCA8CE69226D22620040D1FE /* LazyDIFactoryInfoProvider.swift */,
+				CCA8CE6D226D23F60040D1FE /* LazyModulesLoader.h */,
+				CCA8CE6E226D23F60040D1FE /* LazyModulesLoader.m */,
+				CCA8CE18226D1F9C0040D1FE /* Info.plist */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		CCA8CE27226D1FF40040D1FE /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CCA8CE28226D1FF40040D1FE /* Interfaces.h */,
+				CCA8CE77226D28CB0040D1FE /* Protocol1.swift */,
+				CCA8CE79226D28DE0040D1FE /* Protocol2.swift */,
+				CCA8CE29226D1FF40040D1FE /* Info.plist */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		CCA8CE38226D20010040D1FE /* Footprints */ = {
+			isa = PBXGroup;
+			children = (
+				CCA8CE39226D20010040D1FE /* Footprints.h */,
+				CCA8CE3A226D20010040D1FE /* Info.plist */,
+				CCA8CE73226D26340040D1FE /* LazyFeaturesFootprintsRegistry.swift */,
+				CCA8CE75226D26500040D1FE /* LazyFeatureFootprint.swift */,
+			);
+			path = Footprints;
+			sourceTree = "<group>";
+		};
+		CCA8CE49226D20460040D1FE /* Feature1 */ = {
+			isa = PBXGroup;
+			children = (
+				CCA8CE4A226D20460040D1FE /* Feature1.h */,
+				CCA8CE89226D29780040D1FE /* Feature1LazyDIFactory.swift */,
+				CCA8CE4B226D20460040D1FE /* Info.plist */,
+				CCA8CE85226D29170040D1FE /* Protocol1Impl.swift */,
+			);
+			path = Feature1;
+			sourceTree = "<group>";
+		};
+		CCA8CE5A226D204D0040D1FE /* Feature2 */ = {
+			isa = PBXGroup;
+			children = (
+				CCA8CE8B226D29B00040D1FE /* Feature2LazyDIFactory.swift */,
+				CCA8CE5B226D204D0040D1FE /* Feature2.h */,
+				CCA8CE5C226D204D0040D1FE /* Info.plist */,
+				CCA8CE87226D294F0040D1FE /* Protocol2Impl.swift */,
+			);
+			path = Feature2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CCA8CDFE226D1F920040D1FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA8CE07226D1F920040D1FE /* MergedCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE10226D1F9C0040D1FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA8CE19226D1F9C0040D1FE /* DI.h in Headers */,
+				CCA8CE6F226D23F60040D1FE /* LazyModulesLoader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE21226D1FF30040D1FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA8CE2A226D1FF40040D1FE /* Interfaces.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE32226D20010040D1FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA8CE3B226D20010040D1FE /* Footprints.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE43226D20460040D1FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA8CE4C226D20460040D1FE /* Feature1.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE54226D204D0040D1FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA8CE5D226D204D0040D1FE /* Feature2.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CCA8CDE8226D1E590040D1FE /* LazyModulesExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCA8CDFB226D1E5B0040D1FE /* Build configuration list for PBXNativeTarget "LazyModulesExample" */;
+			buildPhases = (
+				CCA8CDE5226D1E590040D1FE /* Sources */,
+				CCA8CDE6226D1E590040D1FE /* Frameworks */,
+				CCA8CDE7226D1E590040D1FE /* Resources */,
+				CCA8CE0F226D1F920040D1FE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCA8CE09226D1F920040D1FE /* PBXTargetDependency */,
+				CCA8CE1B226D1F9C0040D1FE /* PBXTargetDependency */,
+				CCA8CE2C226D1FF40040D1FE /* PBXTargetDependency */,
+				CCA8CE3D226D20010040D1FE /* PBXTargetDependency */,
+				CCA8CE4E226D20460040D1FE /* PBXTargetDependency */,
+				CCA8CE5F226D204D0040D1FE /* PBXTargetDependency */,
+			);
+			name = LazyModulesExample;
+			productName = LazyModulesExample;
+			productReference = CCA8CDE9226D1E590040D1FE /* LazyModulesExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCA8CE02226D1F920040D1FE /* MergedCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCA8CE0C226D1F920040D1FE /* Build configuration list for PBXNativeTarget "MergedCore" */;
+			buildPhases = (
+				CCA8CDFE226D1F920040D1FE /* Headers */,
+				CCA8CDFF226D1F920040D1FE /* Sources */,
+				CCA8CE00226D1F920040D1FE /* Frameworks */,
+				CCA8CE01226D1F920040D1FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MergedCore;
+			productName = MergedCore;
+			productReference = CCA8CE03226D1F920040D1FE /* MergedCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CCA8CE14226D1F9C0040D1FE /* DI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCA8CE1E226D1F9C0040D1FE /* Build configuration list for PBXNativeTarget "DI" */;
+			buildPhases = (
+				CCA8CE10226D1F9C0040D1FE /* Headers */,
+				CCA8CE11226D1F9C0040D1FE /* Sources */,
+				CCA8CE12226D1F9C0040D1FE /* Frameworks */,
+				CCA8CE13226D1F9C0040D1FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DI;
+			productName = DI;
+			productReference = CCA8CE15226D1F9C0040D1FE /* DI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CCA8CE25226D1FF30040D1FE /* Interfaces */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCA8CE2F226D1FF40040D1FE /* Build configuration list for PBXNativeTarget "Interfaces" */;
+			buildPhases = (
+				CCA8CE21226D1FF30040D1FE /* Headers */,
+				CCA8CE22226D1FF30040D1FE /* Sources */,
+				CCA8CE23226D1FF30040D1FE /* Frameworks */,
+				CCA8CE24226D1FF30040D1FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Interfaces;
+			productName = Interfaces;
+			productReference = CCA8CE26226D1FF30040D1FE /* Interfaces.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CCA8CE36226D20010040D1FE /* Footprints */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCA8CE40226D20010040D1FE /* Build configuration list for PBXNativeTarget "Footprints" */;
+			buildPhases = (
+				CCA8CE32226D20010040D1FE /* Headers */,
+				CCA8CE33226D20010040D1FE /* Sources */,
+				CCA8CE34226D20010040D1FE /* Frameworks */,
+				CCA8CE35226D20010040D1FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCA8CE72226D261C0040D1FE /* PBXTargetDependency */,
+			);
+			name = Footprints;
+			productName = Footprints;
+			productReference = CCA8CE37226D20010040D1FE /* Footprints.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CCA8CE47226D20460040D1FE /* Feature1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCA8CE51226D20470040D1FE /* Build configuration list for PBXNativeTarget "Feature1" */;
+			buildPhases = (
+				CCA8CE43226D20460040D1FE /* Headers */,
+				CCA8CE44226D20460040D1FE /* Sources */,
+				CCA8CE45226D20460040D1FE /* Frameworks */,
+				CCA8CE46226D20460040D1FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCA8CE7E226D28F40040D1FE /* PBXTargetDependency */,
+				CCA8CE7C226D28F10040D1FE /* PBXTargetDependency */,
+			);
+			name = Feature1;
+			productName = Feature1;
+			productReference = CCA8CE48226D20460040D1FE /* Feature1.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CCA8CE58226D204D0040D1FE /* Feature2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCA8CE62226D204D0040D1FE /* Build configuration list for PBXNativeTarget "Feature2" */;
+			buildPhases = (
+				CCA8CE54226D204D0040D1FE /* Headers */,
+				CCA8CE55226D204D0040D1FE /* Sources */,
+				CCA8CE56226D204D0040D1FE /* Frameworks */,
+				CCA8CE57226D204D0040D1FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCA8CE84226D29090040D1FE /* PBXTargetDependency */,
+				CCA8CE80226D28FA0040D1FE /* PBXTargetDependency */,
+			);
+			name = Feature2;
+			productName = Feature2;
+			productReference = CCA8CE59226D204D0040D1FE /* Feature2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCA8CDE1226D1E590040D1FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Avito;
+				TargetAttributes = {
+					CCA8CDE8226D1E590040D1FE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CCA8CE02226D1F920040D1FE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CCA8CE14226D1F9C0040D1FE = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					CCA8CE25226D1FF30040D1FE = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					CCA8CE36226D20010040D1FE = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					CCA8CE47226D20460040D1FE = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					CCA8CE58226D204D0040D1FE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = CCA8CDE4226D1E590040D1FE /* Build configuration list for PBXProject "LazyModulesExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCA8CDE0226D1E590040D1FE;
+			productRefGroup = CCA8CDEA226D1E590040D1FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCA8CDE8226D1E590040D1FE /* LazyModulesExample */,
+				CCA8CE02226D1F920040D1FE /* MergedCore */,
+				CCA8CE14226D1F9C0040D1FE /* DI */,
+				CCA8CE25226D1FF30040D1FE /* Interfaces */,
+				CCA8CE36226D20010040D1FE /* Footprints */,
+				CCA8CE47226D20460040D1FE /* Feature1 */,
+				CCA8CE58226D204D0040D1FE /* Feature2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCA8CDE7226D1E590040D1FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA8CDF7226D1E5B0040D1FE /* LaunchScreen.storyboard in Resources */,
+				CCA8CDF4226D1E5B0040D1FE /* Assets.xcassets in Resources */,
+				CCA8CDF2226D1E590040D1FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE01226D1F920040D1FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE13226D1F9C0040D1FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE24226D1FF30040D1FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE35226D20010040D1FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE46226D20460040D1FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE57226D204D0040D1FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCA8CDE5226D1E590040D1FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA8CDEF226D1E590040D1FE /* ViewController.swift in Sources */,
+				CCA8CDED226D1E590040D1FE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CDFF226D1F920040D1FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE11226D1F9C0040D1FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA8CE66226D205B0040D1FE /* DIContainer.swift in Sources */,
+				CCA8CE6A226D22620040D1FE /* LazyDIFactoryInfoProvider.swift in Sources */,
+				CCA8CE70226D23F60040D1FE /* LazyModulesLoader.m in Sources */,
+				CCA8CE68226D21910040D1FE /* LazyDIFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE22226D1FF30040D1FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA8CE78226D28CB0040D1FE /* Protocol1.swift in Sources */,
+				CCA8CE7A226D28DE0040D1FE /* Protocol2.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE33226D20010040D1FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA8CE76226D26500040D1FE /* LazyFeatureFootprint.swift in Sources */,
+				CCA8CE74226D26340040D1FE /* LazyFeaturesFootprintsRegistry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE44226D20460040D1FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA8CE8A226D29780040D1FE /* Feature1LazyDIFactory.swift in Sources */,
+				CCA8CE86226D29170040D1FE /* Protocol1Impl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA8CE55226D204D0040D1FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA8CE8C226D29B00040D1FE /* Feature2LazyDIFactory.swift in Sources */,
+				CCA8CE88226D294F0040D1FE /* Protocol2Impl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCA8CE09226D1F920040D1FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA8CE02226D1F920040D1FE /* MergedCore */;
+			targetProxy = CCA8CE08226D1F920040D1FE /* PBXContainerItemProxy */;
+		};
+		CCA8CE1B226D1F9C0040D1FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA8CE14226D1F9C0040D1FE /* DI */;
+			targetProxy = CCA8CE1A226D1F9C0040D1FE /* PBXContainerItemProxy */;
+		};
+		CCA8CE2C226D1FF40040D1FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA8CE25226D1FF30040D1FE /* Interfaces */;
+			targetProxy = CCA8CE2B226D1FF40040D1FE /* PBXContainerItemProxy */;
+		};
+		CCA8CE3D226D20010040D1FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA8CE36226D20010040D1FE /* Footprints */;
+			targetProxy = CCA8CE3C226D20010040D1FE /* PBXContainerItemProxy */;
+		};
+		CCA8CE4E226D20460040D1FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA8CE47226D20460040D1FE /* Feature1 */;
+			targetProxy = CCA8CE4D226D20460040D1FE /* PBXContainerItemProxy */;
+		};
+		CCA8CE5F226D204D0040D1FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA8CE58226D204D0040D1FE /* Feature2 */;
+			targetProxy = CCA8CE5E226D204D0040D1FE /* PBXContainerItemProxy */;
+		};
+		CCA8CE72226D261C0040D1FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA8CE14226D1F9C0040D1FE /* DI */;
+			targetProxy = CCA8CE71226D261C0040D1FE /* PBXContainerItemProxy */;
+		};
+		CCA8CE7C226D28F10040D1FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA8CE14226D1F9C0040D1FE /* DI */;
+			targetProxy = CCA8CE7B226D28F10040D1FE /* PBXContainerItemProxy */;
+		};
+		CCA8CE7E226D28F40040D1FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA8CE25226D1FF30040D1FE /* Interfaces */;
+			targetProxy = CCA8CE7D226D28F40040D1FE /* PBXContainerItemProxy */;
+		};
+		CCA8CE80226D28FA0040D1FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA8CE14226D1F9C0040D1FE /* DI */;
+			targetProxy = CCA8CE7F226D28FA0040D1FE /* PBXContainerItemProxy */;
+		};
+		CCA8CE84226D29090040D1FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA8CE25226D1FF30040D1FE /* Interfaces */;
+			targetProxy = CCA8CE83226D29090040D1FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCA8CDF0226D1E590040D1FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCA8CDF1226D1E590040D1FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCA8CDF5226D1E5B0040D1FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCA8CDF6226D1E5B0040D1FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCA8CDF9226D1E5B0040D1FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCA8CDFA226D1E5B0040D1FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCA8CDFC226D1E5B0040D1FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LazyModulesExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.avito.LazyModulesExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCA8CDFD226D1E5B0040D1FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LazyModulesExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.avito.LazyModulesExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CCA8CE0D226D1F920040D1FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MergedCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.avito.MergedCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CCA8CE0E226D1F920040D1FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MergedCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.avito.MergedCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CCA8CE1F226D1F9C0040D1FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.avito.DI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CCA8CE20226D1F9C0040D1FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.avito.DI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CCA8CE30226D1FF40040D1FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Interfaces/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.avito.Interfaces;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CCA8CE31226D1FF40040D1FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Interfaces/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.avito.Interfaces;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CCA8CE41226D20010040D1FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Footprints/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.avito.Footprints;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CCA8CE42226D20010040D1FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Footprints/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.avito.Footprints;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CCA8CE52226D20470040D1FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Feature1/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.avito.Feature1;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CCA8CE53226D20470040D1FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Feature1/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.avito.Feature1;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CCA8CE63226D204D0040D1FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Feature2/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.avito.Feature2;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CCA8CE64226D204D0040D1FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Feature2/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.avito.Feature2;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCA8CDE4226D1E590040D1FE /* Build configuration list for PBXProject "LazyModulesExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA8CDF9226D1E5B0040D1FE /* Debug */,
+				CCA8CDFA226D1E5B0040D1FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCA8CDFB226D1E5B0040D1FE /* Build configuration list for PBXNativeTarget "LazyModulesExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA8CDFC226D1E5B0040D1FE /* Debug */,
+				CCA8CDFD226D1E5B0040D1FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCA8CE0C226D1F920040D1FE /* Build configuration list for PBXNativeTarget "MergedCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA8CE0D226D1F920040D1FE /* Debug */,
+				CCA8CE0E226D1F920040D1FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCA8CE1E226D1F9C0040D1FE /* Build configuration list for PBXNativeTarget "DI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA8CE1F226D1F9C0040D1FE /* Debug */,
+				CCA8CE20226D1F9C0040D1FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCA8CE2F226D1FF40040D1FE /* Build configuration list for PBXNativeTarget "Interfaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA8CE30226D1FF40040D1FE /* Debug */,
+				CCA8CE31226D1FF40040D1FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCA8CE40226D20010040D1FE /* Build configuration list for PBXNativeTarget "Footprints" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA8CE41226D20010040D1FE /* Debug */,
+				CCA8CE42226D20010040D1FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCA8CE51226D20470040D1FE /* Build configuration list for PBXNativeTarget "Feature1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA8CE52226D20470040D1FE /* Debug */,
+				CCA8CE53226D20470040D1FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCA8CE62226D204D0040D1FE /* Build configuration list for PBXNativeTarget "Feature2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA8CE63226D204D0040D1FE /* Debug */,
+				CCA8CE64226D204D0040D1FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCA8CDE1226D1E590040D1FE /* Project object */;
+}
