@@ -2,7 +2,7 @@
 //  DI.h
 //  DI
 //
-//  Created by Тимур Юсипов on 22/04/2019.
+//  Created by Timur Yusipov on 22/04/2019.
 //  Copyright © 2019 Avito. All rights reserved.
 //
 

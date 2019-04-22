@@ -19,17 +19,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ve8-eT-D50">
-                                <rect key="frame" x="128" y="212" width="119" height="30"/>
-                                <state key="normal" title="LOAD MODULE 2"/>
+                                <rect key="frame" x="127" y="212" width="121" height="30"/>
+                                <state key="normal" title="LOAD FEATURE 2"/>
                                 <connections>
-                                    <action selector="loadModule2" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z1Q-Fc-jRL"/>
+                                    <action selector="loadFeature2" destination="BYZ-38-t0r" eventType="touchUpInside" id="HIA-Ug-YH1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYh-kT-Bma">
-                                <rect key="frame" x="129" y="145" width="117" height="30"/>
-                                <state key="normal" title="LOAD MODULE 1"/>
+                                <rect key="frame" x="128" y="145" width="119" height="30"/>
+                                <state key="normal" title="LOAD FEATURE 1"/>
                                 <connections>
-                                    <action selector="loadModule1" destination="BYZ-38-t0r" eventType="touchUpInside" id="xTj-Z0-5HV"/>
+                                    <action selector="loadFeature1" destination="BYZ-38-t0r" eventType="touchUpInside" id="33R-9M-faI"/>
                                 </connections>
                             </button>
                         </subviews>

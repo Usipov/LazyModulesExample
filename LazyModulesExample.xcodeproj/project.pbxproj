@@ -172,6 +172,7 @@
 
 /* Begin PBXFileReference section */
 		CC00439A226D34BA001802CB /* LazyModulesExample.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = LazyModulesExample.xcconfig; sourceTree = "<group>"; };
+		CC00439B226D3DAA001802CB /* find_dublicated_symbols.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = find_dublicated_symbols.sh; sourceTree = SOURCE_ROOT; };
 		CCA8CDE9226D1E590040D1FE /* LazyModulesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyModulesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA8CDEC226D1E590040D1FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCA8CDEE226D1E590040D1FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -307,6 +308,7 @@
 				CCA8CDF3226D1E5B0040D1FE /* Assets.xcassets */,
 				CCA8CDF5226D1E5B0040D1FE /* LaunchScreen.storyboard */,
 				CC00439A226D34BA001802CB /* LazyModulesExample.xcconfig */,
+				CC00439B226D3DAA001802CB /* find_dublicated_symbols.sh */,
 				CCA8CDF8226D1E5B0040D1FE /* Info.plist */,
 			);
 			path = LazyModulesExample;

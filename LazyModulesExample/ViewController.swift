@@ -3,13 +3,13 @@ import DI
 import Interfaces
 
 final class ViewController: UIViewController {
-    @IBAction func loadModule1() {
+    @IBAction func loadFeature1() {
         printWillLoadFeature(named: "Feature1")
         let protocol1Instance = AppDelegate.instance.container.resolve() as Protocol1
         protocol1Instance.printFromProtocol1()
     }
     
-    @IBAction func loadModule2() {
+    @IBAction func loadFeature2() {
         printWillLoadFeature(named: "Feature2")
         let protocol2Instance = AppDelegate.instance.container.resolve() as Protocol2
         protocol2Instance.printFromProtocol2()
